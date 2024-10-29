@@ -443,7 +443,7 @@ spec:
         - -cluster-domain=cluster.local
         - -prometheus-url=http://prometheus.linkerd-viz.svc.cluster.local:9090
         - -enable-pprof=false
-        image: cr.l5d.io/linkerd/metrics-api:stable-2.14.10
+        image: l5d.m.daocloud.io/linkerd/metrics-api:stable-2.14.10
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
@@ -909,7 +909,7 @@ spec:
         - -log-format=plain
         - -identity-trust-domain=cluster.local
         - -enable-pprof=false
-        image: cr.l5d.io/linkerd/tap:stable-2.14.10
+        image: l5d.m.daocloud.io/linkerd/tap:stable-2.14.10
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
@@ -1131,7 +1131,7 @@ spec:
         - -log-level=info
         - -log-format=plain
         - -enable-pprof=false
-        image: cr.l5d.io/linkerd/tap:stable-2.14.10
+        image: l5d.m.daocloud.io/linkerd/tap:stable-2.14.10
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
@@ -1302,7 +1302,7 @@ spec:
         - -log-format=plain
         - -enforced-host=^(localhost|127\.0\.0\.1|web\.linkerd-viz\.svc\.cluster\.local|web\.linkerd-viz\.svc|\[::1\])(:\d+)?$
         - -enable-pprof=false
-        image: cr.l5d.io/linkerd/web:stable-2.14.10
+        image: l5d.m.daocloud.io/linkerd/web:stable-2.14.10
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:
